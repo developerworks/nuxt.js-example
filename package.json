@@ -1,0 +1,15 @@
+{
+  "name": "nuxt.js-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/nuxt",
+    "generate": "./node_modules/.bin/nuxt generate"
+  },
+  "dependencies": {
+    "iview": "^2.4.0",
+    "nuxt": "^1.0.0-rc11",
+    "vue-i18n": "^7.3.0"
+  }
+}
