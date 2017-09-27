@@ -70,7 +70,8 @@ module.exports = {
   // Page transition effect, when from a page route to other pages
   // Value type could be string, object, or function as following:
   // About full references, please see: https://nuxtjs.org/api/pages-transition
-  // transition: 'page',
+  transition: 'transition name not exists',
+
   // or
   // transition: {
   //   name: 'page',
@@ -79,8 +80,13 @@ module.exports = {
   //     console.log('Before enter...');
   //   }
   // },
+
   // transition(to, from) {
   //   if (!from) return 'slide-left'
   //   return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
   // }
+
+  // By setting a not exist transition, you could disable transition of page.
+  // transition: 'transition name not exists',
+
 }
