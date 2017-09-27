@@ -224,15 +224,15 @@
     <div class="nav">
       <Row>
         <Col span="8">
-        <Menu :theme="theme2" on-select="route">
+        <Menu :theme="theme2" @on-select="route">
           <Submenu name="1">
             <template slot="title">
               <Icon type="ios-paper"></Icon>
               数据概览
             </template>
-            <MenuItem name="1-1">应用概览</MenuItem>
-            <MenuItem name="1-2">用户趋势</MenuItem>
-            <MenuItem name="1-3">渠道分析</MenuItem>
+            <MenuItem name="data/application-overview">应用概览</MenuItem>
+            <MenuItem name="data/usage-trend">用户趋势</MenuItem>
+            <MenuItem name="data/channel-data">渠道分析</MenuItem>
             <MenuItem name="1-4">留存分析</MenuItem>
             <MenuItem name="1-5">用户质量评估</MenuItem>
           </Submenu>
@@ -259,14 +259,19 @@
       </Row>
     </div>
 
-    <div class="content">
-      <nuxt-link :to="'/data'">Test</nuxt-link>
-    </div>
+    <content1/>
 
   </div>
 </template>
 <script>
+import Content1 from '../components/Content1'
+import Content2 from '../components/Content2'
+
 export default {
+  components: {
+    Content1,
+    Content2
+  },
   data() {
     return {
       theme2: 'light'
