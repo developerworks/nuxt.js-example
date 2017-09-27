@@ -70,12 +70,12 @@ module.exports = {
   // Page transition effect, when from a page route to other pages
   // Value type could be string, object, or function as following:
   // About full references, please see: https://nuxtjs.org/api/pages-transition
-  transition: 'page',
+  // transition: 'page',
   // or
   // transition: {
   //   name: 'page',
-  //   mode: 'out-in',
-  //   beforeEnter (el) {
+  //   mode: 'in-out',
+  //   beforeEnter(el) {
   //     console.log('Before enter...');
   //   }
   // },
